@@ -12,6 +12,6 @@ namespace Inlämningsuppgift1_EmilJ.Models
         public string Email { get; set; }
         public string Phone_number { get; set; }
 
-        public ICollection<Event> Events { get; set; }
+        public List<Event> Events { get; set; }
     }
 }

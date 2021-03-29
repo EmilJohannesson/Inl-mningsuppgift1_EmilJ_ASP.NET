@@ -1,23 +1,17 @@
 ﻿@page
-@model Inlämningsuppgift1_EmilJ.Pages.Events.EventsModel
+@model Inlämningsuppgift1_EmilJ.Pages.MyEventsModel
 
 @{
-    ViewData["Title"] = "Events";
+    ViewData["Title"] = "MyEvents";
 }
 
-<h1>Events</h1>
+<h1>MyEvents</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Event[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Event[0].Organizer_id)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Event[0].Description)
@@ -44,9 +38,6 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Organizer_id)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
@@ -62,10 +53,6 @@
                 @Html.DisplayFor(modelItem => item.Spots_available)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
         </tr>
 }
     </tbody>

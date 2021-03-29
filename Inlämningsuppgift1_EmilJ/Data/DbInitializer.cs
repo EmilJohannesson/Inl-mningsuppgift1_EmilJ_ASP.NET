@@ -34,21 +34,18 @@ namespace Inlämningsuppgift1_EmilJ.Data
             {
                 new Organizer
                 {
-                 // Id = 1,
                     Name = "Första organizern",
                     Email = "F1@postlåda.se",
                     Phone_number = "0111111"
                 },
                 new Organizer
                 {
-                 // Id = 2,
                     Name = "Andra organizern",
                     Email = "F2@postlåda.se",
                     Phone_number = "0222222"
                 },
                 new Organizer
                 {
-                 // Id = 3,
                     Name = "Tredje organizern",
                     Email = "F3@postlåda.se",
                     Phone_number = "0333333"
@@ -62,20 +59,18 @@ namespace Inlämningsuppgift1_EmilJ.Data
             {
                 new Event
                 {
-                //  Id = 1,
                     Title = "Första eventet",
-                    Organizer_id = 1,
+                    Organizer = organizers[0],
                     Description = "Det allra första eventet någonsin",
                     Place = "Första parken",
                     Address = "Första parken #1",
                     Date = DateTime.Parse("2021-03-30"),
-                    Spots_available = 100
+                    Spots_available = 99
                 },
                 new Event
                 {
-                //  Id = 2,
                     Title = "Andra eventet",
-                    Organizer_id = 2,
+                    Organizer = organizers[1],
                     Description = "Det andra eventet någonsin",
                     Place = "Första parken",
                     Address = "Första parken #2",
@@ -84,14 +79,13 @@ namespace Inlämningsuppgift1_EmilJ.Data
                 },
                 new Event
                 {
-                //  Id = 3,
                     Title = "Tredje eventet",
-                    Organizer_id = 3,
+                    Organizer = organizers[2],
                     Description = "Det tredje eventet någonsin",
                     Place = "Första parken",
                     Address = "Första parken #3",
                     Date = DateTime.Parse("2021-03-30"),
-                    Spots_available = 100
+                    Spots_available = 101
                 }
             };
 
